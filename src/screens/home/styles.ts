@@ -3,15 +3,19 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#5555',
+      backgroundColor: '#111010',
       fontSize: 24,
     },
   
     texto: {
-      color: 'red',
+      color: '#ffffff',
       fontSize: 24,
       fontWeight: 'bold',
       marginTop: 48,
+    },
+
+    textoData: {
+      color: '#8b8989',
     },
   
     caixa: {
