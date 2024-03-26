@@ -13,11 +13,11 @@ export function Home() {
 
   return(
     <View style={styles.container}>
-      <Text style={styles.texto}>
-        React Native
-      </Text>
-
       <View style={styles.caixa}>
+        <Text style={styles.texto}>
+          React Native
+        </Text>
+
         <Text>
           React Native - Data: 21/03/2023
         </Text>
@@ -36,9 +36,9 @@ export function Home() {
           </TouchableOpacity>
         </View>
 
-        <Participant></Participant>
-        <Participant></Participant>
-        <Participant></Participant>
+        <Participant name="Gabriel"/>
+        <Participant name="Davi"/>
+        <Participant name="Vinicius"/>
 
       </View>
     </View>

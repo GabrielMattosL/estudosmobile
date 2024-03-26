@@ -12,12 +12,9 @@ export const styles = StyleSheet.create({
       fontSize: 24,
       fontWeight: 'bold',
       marginTop: 48,
-      textAlign: 'center'
     },
   
     caixa: {
-      flex: 0.9,
-      backgroundColor: 'beige',
       padding: 20
     },
 
