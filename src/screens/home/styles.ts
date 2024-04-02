@@ -58,5 +58,9 @@ export const styles = StyleSheet.create({
       color: '#FFF',
       fontSize: 14,
       textAlign: 'center',
+    },
+
+    height: {
+      height: "75%"
     }
   });
