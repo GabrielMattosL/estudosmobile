@@ -17,6 +17,9 @@ export function Home() {
     }
 
     setParticipants(prevState => [...prevState, participantName])
+    setParticipantName('');
+    participants.push('Ana')
+    console.log(participants);
   }
 
   function handleParticipantRemove(name: string) {
@@ -51,7 +54,8 @@ export function Home() {
             style={styles.input}
             placeholder="Nome do participante"
             placeholderTextColor="#FFF"
-            onChangeText={e => console.log(e)}
+            onChangeText={setParticipantName}
+            value={participantName}
           />
           
           <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
