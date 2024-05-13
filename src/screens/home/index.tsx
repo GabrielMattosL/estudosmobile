@@ -12,14 +12,18 @@ export function Home() {
 
 
   function handleParticipantAdd() {
-    if (participants.includes(participantName)) {
+    
+    if(participantName == "") {
+      return Alert.alert("Não pode adicionar um elemento vazio")
+    }
+
+    if(participants.includes(participantName)) {
       return Alert.alert("Participante Existe", "Já existe um participante na lista com esse nome");
     }
 
     setParticipants(prevState => [...prevState, participantName])
     setParticipantName('');
     participants.push('Ana')
-    console.log(participants);
   }
 
   function handleParticipantRemove(name: string) {
@@ -38,7 +42,6 @@ export function Home() {
       }
     ])
     
-    console.log('Removeu')
   }
 
   return(
